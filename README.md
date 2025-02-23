@@ -1,1 +1,45 @@
-Brain Tumor Anomaly Detection using AutoencodersOverviewThis project focuses on detecting anomalies in brain MRI images using Convolutional Autoencoders (CNN-based Autoencoders). The model learns to reconstruct normal brain images and detects anomalies based on reconstruction loss, making it useful for identifying brain tumors.FeaturesUses Autoencoder-based Anomaly DetectionTrained on Brain MRI DatasetBuilt with TensorFlow & KerasDeployed using Streamlit for easy user interactionDatasetDataset: Brain MRI Images for Tumor DetectionNormal and Anomalous (Tumor) imagesPreprocessed to 128x128 resolutionInstallation1. Clone the Repositorygit clone https://github.com/yourusername/brain-tumor-anomaly-detection.gitcd brain-tumor-anomaly-detection2. Create a Virtual Environmentconda create --name venv python=3.9 -yconda activate venv3. Install Dependenciespip install -r requirements.txtTraining the ModelRun the following command to train the model:python train.pyRunning the Streamlit Appstreamlit run app.pyProject Structure├── dataset/                    # Contains brain MRI images├── models/                     # Saved trained model├── train.py                     # Training script├── app.py                      # Streamlit app for detection├── requirements.txt            # Required dependencies├── README.md                   # Project documentationResultsThe model successfully identifies brain tumors based on reconstruction error.Higher error = Higher anomaly score, indicating a possible tumor.Future ImprovementsImprove model performance with more layers and hyperparameter tuning.Implement Grad-CAM visualization for explainability.Optimize for real-time inference.ContributorsYour Name (@yourgithub)LicenseThis project is licensed under the MIT License.
+# Anomaly Detection
+
+## Overview
+This project focuses on detecting anomalies in brain MRI images using **Convolutional Autoencoders (CNN-based Autoencoders)**. The model learns to reconstruct normal brain images and detects anomalies based on reconstruction loss, making it useful for identifying brain tumors.
+
+## Features
+- Uses **Autoencoder-based Anomaly Detection**
+- Trained on **Brain MRI Dataset**
+- Built with **TensorFlow & Keras**
+- Deployed using **Streamlit** for easy user interaction
+
+## Dataset
+Dataset: [Brain MRI Images for Tumor Detection](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection)
+- **Normal** and **Anomalous (Tumor)** images
+- Preprocessed to **128x128 resolution**
+
+## Installation
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/sandeshchh30/Anomaly-Detection-CNN-Autoencoders.git
+cd Anomaly-Detection-CNN-Autoencoders
+```
+### **2. Create a Virtual Environment**
+```bash
+conda create --name venv python=3.9 -y
+conda activate venv
+```
+### **3. Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Streamlit App
+```bash
+streamlit run app.py
+```
+
+## Results
+- The model successfully identifies brain tumors based on reconstruction error.
+- Higher error = Higher anomaly score, indicating a possible tumor.
+
+## Future Improvements
+- Improve model performance with more layers and hyperparameter tuning.
+- Implement Grad-CAM visualization for explainability.
+- Optimize for real-time inference.
