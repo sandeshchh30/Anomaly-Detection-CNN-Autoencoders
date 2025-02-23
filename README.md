@@ -8,6 +8,7 @@ This project focuses on detecting anomalies in brain MRI images using **Convolut
 - Trained on **Brain MRI Dataset**
 - Built with **TensorFlow & Keras**
 - Deployed using **Streamlit** for easy user interaction
+- App link - [Anomaly Detection](https://anomaly-detection-cnn-autoencoders-xm9tx6yjzshvgrgfedn6bx.streamlit.app)
 
 ## Dataset
 Dataset: [Brain MRI Images for Tumor Detection](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection)
