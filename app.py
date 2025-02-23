@@ -1,9 +1,7 @@
 import streamlit as st
 import numpy as np
 import tensorflow as tf
-import cv2
 from PIL import Image
-import matplotlib.pyplot as plt
 
 # Load the trained model
 model = tf.keras.models.load_model("autoencoder_model.h5", custom_objects={"mse": tf.keras.losses.MeanSquaredError()})
