@@ -10,7 +10,7 @@ model = tf.keras.models.load_model("autoencoder_model.h5", custom_objects={"mse"
 def preprocess_image(image):
     image = image.resize((128, 128))
     image = np.array(image) / 255.0  # Normalize
-    image = np.expand_dims(image, axis=0)  # Add batch dimension
+    image = np.expand_dims(image, axis=0)
     return image
 
 # Function to calculate Mean Squared Error (MSE)
@@ -32,7 +32,7 @@ if uploaded_file is not None:
 
     # Calculate MSE
     mse = calculate_mse(processed_image, reconstructed)
-    threshold = 0.01  # Define a threshold (adjust based on experiments)
+    threshold = 0.003  # Define a threshold (adjust based on experiments)
     
     # Display original and reconstructed images
     col1, col2 = st.columns(2)
